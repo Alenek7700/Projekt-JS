@@ -1,33 +1,92 @@
-body{
+* {
+  font-family: "Reem Kufi Fun", sans-serif;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
-#container{
+#container {
+  overflow-x: hidden;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
-.slide{
+.slide {
   height: 100vh;
   scroll-snap-align: start;
 }
-
-#kalkulator-bmi{
+/*  */
+#kalkulator-bmi {
   width: 100vw;
   height: 100vh;
-  background-color: aqua;
 }
 
-#kalkulator-walut{
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(29, 44, 128);
+/* panel lewy */
+#kalkulator-panel-lewy {
+  float: left;
+  background-color: #83c5be;
+  height: 100%;
+  width: 50%;
+  display: grid;
+  place-items: center;
 }
 
-#kalkulator-pobierania{
+#panel-lewy-main-content {
+  width: 40vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 15px;
+  text-align: justify;
+  padding: 10px;
+}
+/* panel prawy */
+#kalkulator-panel-prawy {
+  float: right;
+  background-color: #ffddd2;
+  height: 100%;
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+
+#panel-prawy-main-content {
+  width: 30vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 15px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.bmi-form {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border-color: #ffddd2;
+}
+
+.BMI-oblicz {
+  width: 100%;
+  margin-top: 15px;
+  height: 30px;
+  background-color: #ffddd2;
+  border-color: #ffddd2;
+}
+/*  */
+#kalkulator-walut {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(170, 202, 202);
+  background-color: #ffe5ec;
+  display: grid;
+  place-items: center;
+}
+
+#kanał {
+  width: 50vw;
+  height: 50vh;
+  background-color: #ffffff;
 }

@@ -1,24 +1,116 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalkulatory</title>
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
-</head>
-<body>
-  <div id="container">
-    <div id="kalkulator-bmi" class="slide">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulatory</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./JS/javascript.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="kalkulator-bmi" class="slide">
+        <div id="kalkulator-panel-lewy">
+          <div id="panel-lewy-main-content">
+            <h1>Kalkulator BMI</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              animi illo facilis in, alias repudiandae tempora natus ipsum
+              inventore id ex, quod vel et aliquid beatae dolore? Facilis quia
+              blanditiis, recusandae a praesentium placeat, eligendi quos omnis
+              consequuntur velit expedita, modi sint pariatur deleniti minima
+              voluptas corporis. Beatae, ipsum sapiente. Perspiciatis vel
+              blanditiis, corporis sapiente corrupti explicabo doloremque ipsam
+              ducimus, repellat suscipit earum quos. Consequuntur reprehenderit
+              et quia eos rerum, excepturi quisquam? Ducimus eos alias ex
+              repellat quisquam beatae commodi temporibus nam nihil debitis
+              deserunt fugiat, ipsum accusamus dicta. Magnam sapiente porro,
+              totam voluptates voluptas explicabo iste modi ducimus ullam maxime
+              repellendus. Cumque voluptatibus iste cupiditate, enim totam sit
+              corporis rerum et non voluptas quos provident tempora deleniti
+              magnam adipisci quam corrupti quo similique sapiente odio dolorum.
+              Quibusdam, veniam tempora itaque perspiciatis perferendis amet et
+              a totam hic repudiandae deleniti id aspernatur in reprehenderit
+              quo omnis cumque exercitationem ad accusantium saepe porro numquam
+              rem inventore corporis? Sequi provident, maiores ad quo in
+              consequatur dolore qui, voluptatibus ab veritatis vitae ratione
+              nemo voluptates aliquam quibusdam modi assumenda, corrupti eius
+              consectetur.
+            </p>
+          </div>
+        </div>
+        <div id="kalkulator-panel-prawy">
+          <div id="panel-prawy-main-content">
+            <h1>Oblicz swoje BMI tutaj</h1>
+            <form>
+              <input
+                type="text"
+                placeholder="Płeć"
+                class="bmi-form"
+                id="plec"
+              />
+              <br />
+              <input
+                type="number"
+                placeholder="Wiek"
+                class="bmi-form"
+                id="wiek"
+              />
+              <br />
+              <input
+                type="number"
+                placeholder="Masa ciała (kg)"
+                required
+                class="bmi-form"
+                id="waga"
+              />
+              <br />
+              <input
+                type="number"
+                placeholder="Wzrost (cm)"
+                required
+                class="bmi-form"
+                id="wzrost"
+              />
+              <br />
+              <button type="submit" class="BMI-oblicz" onclick="obliczBMI()">
+                Oblicz
+              </button>
+            </form>
 
+            <h2>Twoje BMI wynosi:</h2>
+            <div id="wynik-bmi"></div>
+          </div>
+        </div>
+      </div>
+      <!-- uwu -->
+      <div id="kalkulator-walut" class="slide">
+        <div class="kanał">
+          <label for="amount">Kwota:</label>
+          <input type="number" id="amount" step="0.01" min="0" />
+          <label for="from">Z:</label>
+          <select id="from">
+            <option value="PLN">PLN</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <label for="to">Na:</label>
+          <select id="to">
+            <option value="PLN">PLN</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <button onclick="convertCurrency()">Przelicz</button>
+          <p id="result"></p>
+        </div>
+      </div>
     </div>
-    <div id="kalkulator-walut" class="slide">
-
-    </div>
-    <div id="kalkulator-pobierania" class="slide">
-
-    </div>
-  </div>
-  
-</body>
+  </body>
 </html>
