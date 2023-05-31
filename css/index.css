@@ -1,3 +1,32 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#container{
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.slide{
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#kalkulator-bmi{
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+}
+
+#kalkulator-walut{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(29, 44, 128);
+}
+
+#kalkulator-pobierania{
   width: 100vw;
   height: 100vh;
   background-color: rgb(170, 202, 202);
